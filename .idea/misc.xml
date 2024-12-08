@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/Producer-Consumer-Pattern/pom.xml" />
         <option value="$PROJECT_DIR$/Tasks-Scheduler/pom.xml" />
         <option value="$PROJECT_DIR$/ThreadPool/pom.xml" />
+        <option value="$PROJECT_DIR$/Blocking-Queue/pom.xml" />
       </list>
     </option>
   </component>

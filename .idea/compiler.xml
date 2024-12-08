@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Producer-Consumer-Pattern" />
         <module name="ThreadPool" />
+        <module name="Blocking-Queue" />
         <module name="Tasks-Scheduler" />
       </profile>
     </annotationProcessing>
