@@ -1,4 +1,4 @@
-# Problem Statement: Design a multi-threaded task scheduler with n threads which has the capability to schedule recurring tasks or one-time tasks.
+# Design a multi-threaded task scheduler with n threads which has the capability to schedule recurring tasks or one-time tasks.
 
 # Use Cases:
 
