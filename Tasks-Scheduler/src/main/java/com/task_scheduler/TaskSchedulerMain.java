@@ -1,5 +1,6 @@
 package com.task_scheduler;
 
+import com.task_scheduler.entities.ExecutorConfig;
 import com.task_scheduler.entities.ScheduledTask;
 import com.task_scheduler.entities.impl.OneTimeScheduledTask;
 import com.task_scheduler.entities.impl.OneTimeTaskExecutionContext;
@@ -28,13 +29,13 @@ public class TaskSchedulerMain {
         ITaskStore<ScheduledTask> taskStore = new PriorityBlockingQueueTaskStore(comparator, 10);
 
         for (int i = 0; i < 5; i++) {
-            taskStore.add(new OneTimeScheduledTask(new OneTimeTaskExecutionContext(i + ""), Instant.now().toEpochMilli() + 100));
+            taskStore.add(new OneTimeScheduledTask(new OneTimeTaskExecutionContext(i + ""), Instant.now().toEpochMilli() + 50));
         }
         for (int i = 5; i < 10; i++) {
             taskStore.add(new RecurringScheduledTask(Instant.now().toEpochMilli() + 100, 100, new RecurringTaskExecutionContext(i + "")));
         }
 
-        TaskScheduler taskScheduler = new TaskScheduler(3, taskStore);
+        TaskScheduler taskScheduler = new TaskScheduler(new ExecutorConfig(3), taskStore);
 
         taskScheduler.start();
 
