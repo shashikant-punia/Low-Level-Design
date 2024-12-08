@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/Tasks-Scheduler/pom.xml" />
         <option value="$PROJECT_DIR$/ThreadPool/pom.xml" />
         <option value="$PROJECT_DIR$/Blocking-Queue/pom.xml" />
+        <option value="$PROJECT_DIR$/Circuite-Breaker/pom.xml" />
       </list>
     </option>
   </component>
