@@ -10,6 +10,7 @@
         <module name="ThreadPool" />
         <module name="Blocking-Queue" />
         <module name="Tasks-Scheduler" />
+        <module name="Circuit-Breaker" />
       </profile>
     </annotationProcessing>
   </component>
