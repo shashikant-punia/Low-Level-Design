@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Producer-Consumer-Pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/Tasks-Scheduler/pom.xml" />
       </list>
     </option>
   </component>
